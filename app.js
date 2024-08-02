@@ -20,10 +20,10 @@
 //  document.getElementById("sentence").innerHTML = value;
 
 
-let avg = 90;
+let avg = -90;
 let outcome;
 
-if(avg <=20 ){
+if((avg <=20)&&(avg >=0) ){
     outcome="E"
 }else if((avg>=21) && (avg <=39)){
     outcome="D"
@@ -33,5 +33,8 @@ if(avg <=20 ){
     outcome="B"
 }else if((avg>=80)&&(avg<=100)){
     outcome="A"
+}else  {
+    window.alert("Invalid ")
 }
 document.getElementById("header").innerHTML=outcome
+
